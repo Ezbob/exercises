@@ -6,7 +6,16 @@ type HelloRequest:void {
   .sponsor:string
 }
 
+type sumRequest:void {
+	.numbers[1,*]:int
+}
+
 interface HelloIface {
 RequestResponse:
   hello(HelloRequest)(string)
+}
+
+interface CalcIface {
+RequestResponse: 
+	sumFunc(sumRequest)(int)
 }
