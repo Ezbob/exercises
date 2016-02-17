@@ -17,5 +17,5 @@ RequestResponse:
 
 interface CalcIface {
 RequestResponse: 
-	sumFunc(sumRequest)(int)
+	sum(sumRequest)(int)
 }
